@@ -12,8 +12,8 @@ images.forEach((image, i) => {
   ctx.strokeStyle = "red";
   ctx.lineWidth = 5;
   ctx.strokeRect(0, 0, image.width, image.height);
-  // let imageUrl = canvas.toDataURL();
-  // image.src = imageUrl;
+  let imageUrl = canvas.toDataURL();
+  image.src = imageUrl;
 
 
   image.addEventListener('mousedown', (e) => {
